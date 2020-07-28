@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        tools:context=".OrderDetails">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shadow_to_layout"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="11dp"
+                android:text="Address Details"
+                android:textSize="16dp"
+                android:textColor="#6200EE"
+                android:textStyle="bold"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_gravity="center"
+                android:paddingLeft="10dp"
+                android:layout_margin="10dp"
+                android:background="#999"/>
+
+            <TextView
+                android:id="@+id/addressDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14dp"
+                android:paddingLeft="20dp"
+                android:paddingBottom="10dp"
+                android:textColor="#000"
+                android:text="fdfd" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shadow_to_layout"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="11dp"
+                android:text="Medicine(s) Delivery Mode"
+                android:textSize="16dp"
+                android:textColor="#6200EE"
+                android:textStyle="bold"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_gravity="center"
+                android:paddingLeft="10dp"
+                android:layout_margin="10dp"
+                android:background="#999"/>
+
+            <TextView
+                android:id="@+id/deliveryMode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14dp"
+                android:paddingLeft="20dp"
+                android:textColor="#000"
+                android:paddingBottom="10dp"
+                android:text="fdfd" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shadow_to_layout"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="11dp"
+                android:text="Preferred Stores"
+                android:textSize="16dp"
+                android:textColor="#6200EE"
+                android:textStyle="bold"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_gravity="center"
+                android:paddingLeft="10dp"
+                android:layout_margin="10dp"
+                android:background="#999"/>
+
+            <TextView
+                android:id="@+id/storeList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14dp"
+                android:paddingLeft="20dp"
+                android:paddingBottom="10dp"
+                android:textColor="#000"
+                android:text="fdfd" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shadow_to_layout"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="11dp"
+                android:text="Selected Prescription"
+                android:textSize="16dp"
+                android:textColor="#6200EE"
+                android:textStyle="bold"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_gravity="center"
+                android:paddingLeft="10dp"
+                android:layout_margin="10dp"
+                android:background="#999"/>
+
+            <ImageView
+                android:id="@+id/prescriptionPreview"
+                android:layout_width="200dp"
+                android:layout_height="180dp"
+                android:layout_marginLeft="20dp"
+                android:paddingBottom="10dp" />
+        </LinearLayout>
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="#A4BDDB"
+            android:text="Confirm Order"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:onClick="confirmOrder"
+            android:soundEffectsEnabled="true"/>
+
+    </LinearLayout>
+</ScrollView>

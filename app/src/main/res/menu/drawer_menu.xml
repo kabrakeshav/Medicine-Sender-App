@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item android:id="@+id/myAccount"
+            android:icon="@drawable/my_account"
+            android:title="My Account" />
+
+        <item android:id="@+id/myProfile"
+            android:icon="@drawable/brace"
+            android:title="My Profile"
+            android:visible="false" />
+
+        <item android:id="@+id/referAndEarn"
+            android:icon="@drawable/brace"
+            android:title="Refer and Earn"
+            android:visible="false" />
+
+        <item android:id="@+id/myOrders"
+            android:icon="@drawable/brace"
+            android:title="My Orders"
+            android:visible="false" />
+
+        <item android:id="@+id/myPrescriptions"
+            android:icon="@drawable/brace"
+            android:title="My Prescriptions"
+            android:visible="false" />
+
+        <item android:id="@+id/familyMember"
+            android:icon="@drawable/brace"
+            android:title="Family Members"
+            android:visible="false" />
+
+        <item android:id="@+id/wishList"
+            android:icon="@drawable/brace"
+            android:title="Wishlist"
+            android:visible="false" />
+
+
+
+
+        <item android:id="@+id/services"
+            android:icon="@drawable/services"
+            android:title="Services" />
+
+        <item android:id="@+id/nearestStoreLocator"
+            android:icon="@drawable/brace"
+            android:title="Nearest Stores"
+            android:visible="false" />
+
+        <item android:id="@+id/nearestBloodBank"
+            android:icon="@drawable/brace"
+            android:title="Nearest Blood Bank"
+            android:visible="false" />
+
+        <item android:id="@+id/nearestDoctor"
+            android:icon="@drawable/brace"
+            android:title="Nearest Doctor"
+            android:visible="false" />
+
+        <item android:id="@+id/nearestLab"
+            android:icon="@drawable/brace"
+            android:title="Nearest Lab"
+            android:visible="false" />
+
+
+
+
+        <item android:id="@+id/medicines"
+            android:icon="@drawable/medicines"
+            android:title="Medicines" />
+
+        <item android:id="@+id/findMedicine"
+            android:icon="@drawable/brace"
+            android:title="Find Medicine"
+            android:visible="false" />
+
+        <item android:id="@+id/orderWithPrescription"
+            android:icon="@drawable/brace"
+            android:title="Order by Prescription"
+            android:visible="false" />
+
+
+
+
+        <item android:id="@+id/doctor"
+            android:icon="@drawable/doctor"
+            android:title="Doctor" />
+
+        <item android:id="@+id/findDoctor"
+            android:icon="@drawable/brace"
+            android:title="Find Doctor"
+            android:visible="false" />
+
+        <item android:id="@+id/myAppointment"
+            android:icon="@drawable/brace"
+            android:title="My Appointments"
+            android:visible="false" />
+
+
+
+        <item android:id="@+id/lab_test"
+            android:icon="@drawable/lab_test"
+            android:title="Lab Test" />
+
+        <item android:id="@+id/bookLabTest"
+            android:icon="@drawable/brace"
+            android:title="Book Lab Test"
+            android:visible="false" />
+
+
+
+        <item android:id="@+id/others"
+            android:icon="@drawable/others"
+            android:title="Others" />
+
+        <item android:id="@+id/needHelp"
+            android:icon="@drawable/brace"
+            android:title="Need Help?"
+            android:visible="false" />
+
+        <item android:id="@+id/requestProduct"
+            android:icon="@drawable/brace"
+            android:title="Request Product"
+            android:visible="false" />
+
+        <item android:id="@+id/myCoupons"
+            android:icon="@drawable/brace"
+            android:title="My Coupons"
+            android:visible="false" />
+
+        <item android:id="@+id/articles"
+            android:icon="@drawable/brace"
+            android:title="Articles"
+            android:visible="false" />
+
+        <item android:id="@+id/aboutUs"
+            android:icon="@drawable/brace"
+            android:title="About Us"
+            android:visible="false" />
+
+        <item android:id="@+id/privacyPolicy"
+            android:icon="@drawable/brace"
+            android:title="Privacy Policy"
+            android:visible="false" />
+
+        <item android:id="@+id/returnCancel"
+            android:icon="@drawable/brace"
+            android:title="Return/Cancel"
+            android:visible="false" />
+
+
+
+
+
+
+        <item android:id="@+id/sign_out"
+            android:icon="@drawable/sign_out"
+            android:title="Sign Out" />
+    </group>
+
+
+
+
+<!--    <item android:title="Our Team">-->
+<!--        <menu>-->
+<!--            <item android:id="@+id/ourTeamMembers"-->
+<!--                android:checked="true"-->
+<!--                app:showAsAction="always"-->
+<!--                android:visible="true"-->
+<!--                android:title=""-->
+<!--                app:actionLayout="@layout/our_team_members_drawer_menu"/>-->
+<!--        </menu>-->
+<!--    </item>-->
+
+
+
+    <item android:title="Our Address">
+        <menu>
+            <item android:title="1ML Healthcare Services Pvt. Ltd." android:checked="true"/>
+            <item android:id="@+id/ourAddress"
+                android:checked="true"
+                app:showAsAction="always"
+                android:visible="true"
+                android:title=""
+                app:actionLayout="@layout/our_address"/>
+            <item android:id="@+id/Pan_Cin"
+                android:checked="true"
+                app:showAsAction="always"
+                android:visible="true"
+                android:title=""
+                app:actionLayout="@layout/pan_cin_number"/>
+        </menu>
+    </item>
+
+
+    <item android:title="Temperature">
+        <menu>
+            <item android:title="Get Temperature"
+                android:paddingTop="-500dp"
+                android:icon="@drawable/temperature"
+                android:id="@+id/temperature" />
+        </menu>
+    </item>
+
+
+    <item android:title="Catch us on">
+        <menu>
+            <item android:id="@+id/socialMedia"
+                android:checked="true"
+                app:showAsAction="always"
+                android:visible="true"
+                android:title=""
+                app:actionLayout="@layout/social_media"/>
+        </menu>
+    </item>
+
+
+
+</menu>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    tools:context=".SignUp">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:titleTextAppearance="@style/Toolbar.TitleText"/>
+
+
+    <TextView
+        android:id="@+id/text11"
+        android:layout_marginTop="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign-Up to 1ML"
+        android:textColor="@color/colorPrimary"
+        android:gravity="center"
+        android:textSize="18dp"
+        android:textStyle="bold"/>
+
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_alignTop="@id/text11"
+        android:layout_marginTop="60dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Enter your name"
+        android:background="@drawable/otp_phone_edittext_background"/>
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_alignTop="@+id/name"
+        android:layout_marginTop="60dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Enter your email address"
+        android:inputType="textEmailAddress"
+        android:background="@drawable/otp_phone_edittext_background"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignTop="@id/email"
+        android:layout_marginTop="80dp"
+        android:orientation="horizontal">
+
+        <com.hbb20.CountryCodePicker
+            android:id="@+id/ccpSign"
+            android:layout_width="0dp"
+            android:layout_weight="1.3"
+            android:layout_height="50dp"
+            android:gravity="center"
+            app:ccp_autoDetectCountry="true"
+            app:ccp_showNameCode="true"
+            android:background="@drawable/otp_phone_edittext_background"
+            android:layout_marginRight="7dp"
+            app:ccp_textSize="16dp" />
+
+        <EditText
+            android:id="@+id/phone_num"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="2"
+            android:digits="+0123456789"
+            android:ems="10"
+            android:hint="Enter Phone Number"
+            android:paddingLeft="10dp"
+            android:background="@drawable/otp_phone_edittext_background"
+            android:inputType="phone"
+            />
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/signUpActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:soundEffectsEnabled="true"
+        android:text="Sign Up"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:background="@drawable/button_background"/>
+
+
+
+</RelativeLayout>

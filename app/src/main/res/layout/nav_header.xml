@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@color/colorAccent"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/userProfilePicNav"
+            android:layout_width="84dp"
+            android:layout_height="93dp"
+            android:paddingTop="30dp"
+            android:src="@drawable/ic_account_circle" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="93dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/userNameEmailNav"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="User-Name Here\nuserEmail@here.com"
+                android:gravity="center_vertical"
+                android:paddingTop="30dp"
+                android:textSize="12dp"
+                android:textColor="#222"
+                android:textStyle="bold" />
+
+<!--            <TextView-->
+<!--                android:id="@+id/userEmailNav"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:textSize="10dp"-->
+<!--                android:text="userEmail@here.com" />-->
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="8dp"
+        android:layout_weight="3"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitStart"
+                android:src="@drawable/order_list" />
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="20dp"
+                android:gravity="center"
+                android:text="My\n Orders"
+                android:textColor="#000"
+                android:textSize="8dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="55dp"
+            android:background="#000" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:scaleType="fitStart"
+                android:src="@drawable/cash" />
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="20dp"
+                android:gravity="center"
+                android:text="1ML\n Cash"
+                android:textColor="#000"
+                android:textSize="8dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="55dp"
+            android:background="#000" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:scaleType="fitStart"
+                android:src="@drawable/record_file" />
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="20dp"
+                android:gravity="center"
+                android:text="Health\n Record File"
+                android:textColor="#000"
+                android:textSize="8dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#000"/>
+
+
+
+</LinearLayout>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.keshavoneml.oneml_customer">
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".LabTestMainPage"
+            android:label="Lab Tests"
+            android:parentActivityName=".MainPage"></activity>
+
+        <uses-library
+            android:name="com.google.android.maps"
+            android:required="true" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity android:name=".NearHospitals" />
+        <activity
+            android:name=".ReferAndEarn"
+            android:label="Refer and Earn"
+            android:parentActivityName=".MainPage" />
+        <activity
+            android:name=".ReturnCancel"
+            android:label="Return and Cancel"
+            android:parentActivityName=".MainPage" />
+        <activity
+            android:name=".PrivacyPolicy"
+            android:label="Privacy Policy"
+            android:parentActivityName=".MainPage" />
+        <activity
+            android:name=".BMI"
+            android:label="BMI Calculator"
+            android:parentActivityName=".HealthPage" />
+        <activity
+            android:name=".HealthPage"
+            android:label="Health"
+            android:parentActivityName=".MainPage" />
+        <activity
+            android:name=".WebInApp"
+            android:label="Our Products"
+            android:parentActivityName=".MainPage" />
+        <activity
+            android:name=".SignUp"
+            android:label="Sign-Up" />
+        <activity
+            android:name=".AboutUs"
+            android:label="About Us"
+            android:parentActivityName=".MainPage" />
+        <activity
+            android:name=".VendorPageNavBar"
+            android:label="Nearest Stores"
+            android:parentActivityName=".MainPage" />
+        <activity
+            android:name=".MyProfile"
+            android:label="My Profile"
+            android:parentActivityName=".MainPage" />
+        <activity
+            android:name=".ConfirmOrder"
+            android:label="Order Confirmed" />
+        <activity
+            android:name=".OrderDetails"
+            android:label="Order Details"
+            android:parentActivityName=".VendorPage" />
+        <activity
+            android:name=".VendorPage"
+            android:label="Select Vendor(s)"
+            android:parentActivityName=".AddressCustomer" />
+        <activity
+            android:name=".AddressCustomer"
+            android:label="Select Address"
+            android:parentActivityName=".OrderQuantity" />
+        <activity
+            android:name=".GetOTP"
+            android:label="OTP Verification" />
+        <activity
+            android:name=".OrderQuantity"
+            android:label="Prescription Options"
+            android:parentActivityName=".UploadPrescription" />
+        <activity
+            android:name=".UploadPrescription"
+            android:label="Upload Prescription"
+            android:parentActivityName=".MainPage" />
+        <activity
+            android:name=".MainPage"
+            android:label="Home"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

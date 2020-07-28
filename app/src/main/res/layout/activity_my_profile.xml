@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyProfile">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/colorAccent"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/profilePic"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center_horizontal"
+                        android:backgroundTint="#fcfcfc"
+                        android:src="@drawable/ic_account_circle"
+                        app:civ_border_color="@color/colorAccent"
+                        app:civ_border_width="2dp" />
+
+                    <!-- android:src="@mipmap/ic_launcher"-->
+                    <ImageView
+                        android:id="@+id/profilePicChose"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignEnd="@+id/profilePic"
+                        android:layout_alignRight="@+id/profilePic"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="10dp"
+                        android:backgroundTint="@color/colorPrimary"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:src="@drawable/ic_camera" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Account Information"
+                    android:textColor="@color/colorAccent" />
+
+                <EditText
+                    android:id="@+id/edtUsername"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:longClickable="false"
+                    android:textIsSelectable="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/edit_background"
+                    android:drawableLeft="@drawable/maleicon"
+                    android:drawablePadding="10dp"
+                    android:drawableTint="@color/colorPrimary"
+                    android:hint="Enter User Name"
+                    android:inputType="textCapCharacters"
+                    android:textAllCaps="true"
+                    android:maxLines="1"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="12dp"
+                    android:paddingRight="20dp"
+                    android:paddingBottom="12dp"
+                    android:textSize="15dp" />
+
+                <EditText
+                    android:id="@+id/edtUserEmail"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:longClickable="false"
+                    android:textIsSelectable="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/edit_background"
+                    android:drawableLeft="@drawable/ic_email"
+                    android:drawablePadding="010dp"
+                    android:drawableTint="@color/colorPrimary"
+                    android:hint="Enter your email"
+                    android:inputType="textVisiblePassword"
+                    android:maxLines="1"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="12dp"
+                    android:paddingRight="20dp"
+                    android:paddingBottom="12dp"
+                    android:textSize="15dp" />
+
+                <EditText
+                    android:id="@+id/edtUserPhone"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:longClickable="false"
+                    android:textIsSelectable="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/edit_background"
+                    android:drawableLeft="@drawable/ic_phone"
+                    android:drawablePadding="10dp"
+                    android:drawableTint="@color/colorPrimary"
+                    android:hint="Enter your phone number"
+                    android:inputType="phone|textVisiblePassword"
+                    android:maxLength="13"
+                    android:maxLines="1"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="12dp"
+                    android:paddingRight="20dp"
+                    android:paddingBottom="12dp"
+                    android:textSize="15dp" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Address Information"
+                    android:textColor="@color/colorAccent" />
+
+                <EditText
+                    android:id="@+id/edtUseraddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/edit_background"
+                    android:drawableLeft="@drawable/ic_location"
+                    android:drawableTint="@color/colorPrimary"
+                    android:hint="Enter your address"
+                    android:maxLines="1"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="12dp"
+                    android:paddingRight="20dp"
+                    android:paddingBottom="12dp"
+                    android:singleLine="true"
+                    android:textSize="15dp" />
+
+
+                <EditText
+                    android:id="@+id/edtUserEContactnumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/edit_background"
+                    android:drawableLeft="@drawable/ic_phone"
+                    android:drawableTint="@color/colorPrimary"
+                    android:hint="Emergency contact number"
+                    android:inputType="phone|textVisiblePassword"
+                    android:maxLength="10"
+                    android:maxLines="1"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="12dp"
+                    android:paddingRight="20dp"
+                    android:paddingBottom="12dp"
+                    android:textSize="15dp" />
+
+
+                <EditText
+                    android:id="@+id/edtUserEContactname"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/edit_background"
+                    android:drawableLeft="@drawable/maleicon"
+                    android:drawableTint="@color/colorPrimary"
+                    android:hint="Emergency contact name"
+                    android:maxLines="1"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="12dp"
+                    android:paddingRight="20dp"
+                    android:paddingBottom="12dp"
+                    android:textSize="15dp" />
+
+                <EditText
+                    android:id="@+id/edtCity"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/edit_background"
+                    android:drawableLeft="@drawable/ic_location"
+                    android:drawableTint="@color/colorPrimary"
+                    android:hint="City"
+                    android:maxLines="1"
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="12dp"
+                    android:paddingRight="20dp"
+                    android:paddingBottom="12dp"
+                    android:textSize="15dp" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Personal Information"
+                    android:textColor="@color/colorAccent" />
+
+                <EditText
+                    android:id="@+id/dateOfbirth"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/edit_background"
+                    android:drawableLeft="@drawable/ic_date"
+                    android:drawablePadding="10dp"
+                    android:drawableTint="@color/colorPrimary"
+                    android:hint="Date of Birth"
+                    android:maxLines="1"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="12dp"
+                    android:paddingRight="20dp"
+                    android:paddingBottom="12dp"
+                    android:textSize="15dp"
+                    android:focusableInTouchMode="false"/>
+
+                <Spinner
+                    android:id="@+id/spinnergender"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/spinner_background"
+                    android:entries="@array/gender_array"
+                    android:gravity="center_horizontal"
+                    android:overlapAnchor="true"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp" />
+
+
+                <Spinner
+                    android:id="@+id/spinnerBloodGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="20dp"
+
+                    android:background="@drawable/spinner_background"
+                    android:entries="@array/bloodgroup_array"
+                    android:gravity="center_horizontal"
+                    android:overlapAnchor="true"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp" />
+
+                <Spinner
+                    android:id="@+id/spinnerMarriageStatus"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/spinner_background"
+                    android:entries="@array/marriagestatus_array"
+                    android:gravity="center_horizontal"
+                    android:overlapAnchor="true"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp" />
+
+
+                <EditText
+                    android:id="@+id/edtUserHeight"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/edit_background"
+                    android:drawableLeft="@drawable/ic_height"
+                    android:drawablePadding="10dp"
+                    android:drawableTint="@color/colorPrimary"
+                    android:hint="Height"
+                    android:inputType="phone|textVisiblePassword"
+                    android:maxLines="1"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="12dp"
+                    android:paddingRight="20dp"
+                    android:paddingBottom="12dp"
+                    android:textSize="15dp" />
+
+                <EditText
+                    android:id="@+id/edtUserWeight"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/edit_background"
+                    android:drawableLeft="@drawable/ic_muscle"
+                    android:drawablePadding="10dp"
+                    android:drawableTint="@color/colorPrimary"
+                    android:hint="Weight"
+                    android:inputType="phone|textVisiblePassword"
+                    android:maxLines="1"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="12dp"
+                    android:paddingRight="20dp"
+                    android:paddingBottom="12dp"
+                    android:textSize="15dp" />
+
+                <Button
+                    android:id="@+id/btnSubmit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="20dp"
+                    android:background="@color/colorAccent"
+                    android:text="UPDATE"
+                    android:textAllCaps="true"
+                    android:textColor="#FCFCFC"
+                    android:onClick="updateProfile"
+                    android:textSize="16dp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

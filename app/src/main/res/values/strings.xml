@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">OneML</string>
+
+    <string name="navigation_drawer_open">Open Navigation Drawer</string>
+    <string name="navigation_drawer_close">Close Navigation Drawer</string>
+
+    <string name="google_places_api">AIzaSyDPmRbNEvHc4klge9YobZ1DIwm9RiYGNTI</string>
+
+    <array name="gender_array">
+        <item>Gender</item>
+        <item>Male</item>
+        <item>Female</item>
+        <item>Other</item>
+    </array>
+
+
+    <array name="bloodgroup_array">
+        <item>Blood group</item>
+        <item>A+</item>
+        <item>O+</item>
+        <item>B+</item>
+        <item>AB+</item>
+        <item>A-</item>
+        <item>O-</item>
+        <item>B-</item>
+        <item>AB-</item>
+    </array>
+
+    <array name="marriagestatus_array">
+        <item>Married status</item>
+        <item>Married</item>
+        <item>Unmarried</item>
+    </array>
+
+    <string-array name="weight">
+        <item>kg</item>
+        <item>lbs</item>
+    </string-array>
+
+
+    <string-array name="height">
+        <item>cm</item>
+        <item>ft</item>
+    </string-array>
+
+</resources>

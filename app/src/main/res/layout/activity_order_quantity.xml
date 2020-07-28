@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".OrderQuantity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Choose an Option"
+        android:textStyle="bold"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:textSize="16dp"
+        android:textColor="#000" />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shadow_to_order_quantity"
+        android:orientation="vertical">
+
+        <RadioGroup
+            android:id="@+id/optionChoose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/samePrescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Order everything as per prescription"
+                android:textColor="#000"
+                android:textSize="16dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp" />
+
+            <RadioGroup
+                android:id="@+id/radioInside1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="45dp">
+
+                <RadioButton
+                    android:id="@+id/specificDuration"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Specify duration of medicines (eg, 20 days)"/>
+
+                <EditText
+                    android:id="@+id/durationDays"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:layout_marginLeft="60dp"
+                    android:hint="30"/>
+
+
+                <RadioButton
+                    android:id="@+id/durationDoctor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="duration and quantity specified by doctor"
+                    android:layout_marginBottom="30dp"/>
+
+
+            </RadioGroup>
+
+
+            <RadioButton
+                android:id="@+id/specifyPrescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Let me specify medicines and quantity"
+                android:textColor="#000"
+                android:textSize="16dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp" />
+
+            <EditText
+                android:id="@+id/medicineNameRadioTwo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="format : (medicine(s) name, quantity)"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="45dp"/>
+
+            <View
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_gravity="center"
+                android:paddingLeft="10dp"
+                android:layout_margin="10dp"
+                android:background="#000"/>
+
+            <RadioButton
+                android:id="@+id/callPrescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Call me for details"
+                android:textColor="#000"
+                android:textSize="16dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="10dp" />
+        </RadioGroup>
+
+    </LinearLayout>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="#A4BDDB"
+        android:text="Continue"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:onClick="addressPage"
+        android:soundEffectsEnabled="true"/>
+
+
+</LinearLayout>

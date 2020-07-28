@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/bellIcon"
+        android:title="Notifications"
+        android:orderInCategory="1"
+        android:icon="@drawable/ic_notifications"
+        app:showAsAction="always"/>
+
+    <item android:id="@+id/cartIcon"
+        android:title="Shopping"
+        android:orderInCategory="2"
+        android:icon="@drawable/ic_shopping_cart"
+        app:showAsAction="always"/>
+
+</menu>

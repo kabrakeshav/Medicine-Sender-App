@@ -1,0 +1,22 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="start"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-4dp"
+            android:text="21A, First Floor, Near Akshardham Mandir Road, Moti Nagar, Vaishali Nagar\nJaipur, Rajasthan - 302021"
+            android:textColor="#0000ff"
+            android:textSize="13dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
