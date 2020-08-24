@@ -1,4 +1,4 @@
->> Android App implemented in Java, XML with REST APIs.
+>> Android App implemented in Java, XML, Firebase with REST APIs.
 >> Developed for 1ML Healthcare Services Pvt. Ltd. during my Summer Internship (2020) with them.
 >> App is implemented so that user can :
     > Upload medical prescription to order medicines.
@@ -6,8 +6,6 @@
     > Get temperature.
     > Locate nearest medicine vendors.
     > Get the medicined delivered to customer's doorsteps.
-
->> Playstore Link : https://play.google.com/store/apps/details?id=com.keshavoneml.oneml_customer&hl=en_IN
 
 =============================================================================================================
 
